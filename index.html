@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Preview slideshow</title>
+    <style>
+    </style>
+    <link href="CSS/reset.css" rel="stylesheet">
+    <link href="CSS/main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="slider">
+        <div class="main" id="template_main">
+            <div class="main-i" id="main_{{index}}">
+                <div class="caption">
+                    <h2>
+                        {{h2}}
+                    </h2>
+                    <h3>
+                        {{h3}}
+                    </h3>
+                </div>
+                <img src="images/{{index}}.jpg" />
+            </div>
+        </div>
+        <div class="ctrl" id="template_ctrl">
+            <a href="javascript:switchSlider({{index}});" class="ctrl-i" id="ctrl_{{index}}">
+                <img src="images/{{index}}.jpg" />
+            </a>
+        </div>
+    </div>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
